@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل أسعار اليمن - نظام برايس بلس | PricePulse APK للأندرويد</title>
+    <!-- SEO & Metadata -->
+    <meta name="description"
+        content="قم بتنزيل أحدث نسخة من تطبيق نظام أسعار اليمن (PricePulse) للأندرويد بصيغة APK. راقب الأسعار، قارن المنتجات، واكتشف أرخص المتاجر في اليمن بسهولة ومجانا!">
+    <meta name="keywords"
+        content="نظام أسعار اليمن, تحميل تطبيق أسعار اليمن, برايس بلس, PricePulse APK, تحميل يمن برايس, مراقبة الأسعار في اليمن, أسعار السلع في اليمن">
+
+    <!-- Google Fonts: Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        /* Animated Background Blobs */
+        .blob {
+            position: absolute;
+            filter: blur(80px);
+            z-index: 0;
+            opacity: 0.5;
+            animation: float 10s infinite ease-in-out alternate;
+        }
+
+        .blob-1 {
+            width: 400px;
+            height: 400px;
+            background: #3b82f6;
+            top: -100px;
+            left: -100px;
+            border-radius: 50%;
+        }
+
+        .blob-2 {
+            width: 300px;
+            height: 300px;
+            background: #10b981;
+            bottom: -50px;
+            right: -50px;
+            border-radius: 50%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) scale(1);
+            }
+
+            100% {
+                transform: translateY(40px) scale(1.1);
+            }
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 3rem;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #2563eb, #0ea5e9);
+            border-radius: 30px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+            animation: pulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 20px rgba(37, 99, 235, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 99, 235, 0);
+            }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #60a5fa, #34d399);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .version {
+            font-size: 1rem;
+            color: #94a3b8;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #cbd5e1;
+            margin-bottom: 2.5rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            text-align: right;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.3s ease, background 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-item i {
+            color: #34d399;
+            font-size: 1.2rem;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(to right, #10b981, #059669);
+            color: white;
+            text-decoration: none;
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+            width: 100%;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 15px 25px rgba(16, 185, 129, 0.5);
+        }
+
+        .info-text {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+
+        .info-text i {
+            color: #fbbf24;
+            margin-left: 5px;
+        }
+
+        /* SEO Text (visually hidden but readable by Google) */
+        .seo-text {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 2rem 1.5rem;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="seo-text">
+        <h2>أفضل تطبيق لمقارنة الأسعار في اليمن</h2>
+        <p>قم بتنزيل أحدث نسخة من تطبيق نظام أسعار اليمن (PricePulse) للأندرويد بصيغة APK مباشر ومجاني بالكامل. التطبيق
+            الرسمي الذي يسهل عليك معرفة الأسعار الرسمية والبحث عن المنتجات والإبلاغ عن المخالفات في اليمن.</p>
+        <p>تحميل برنامج اسعار المواد الغذائية في اليمن, تحميل تطبيق الاسعار في اليمن, PricePulse APK free download,
+            برنامج لمعرفة اسعار السلع في صنعاء وعدن</p>
+    </div>
+
+    <!-- Animated blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="container">
+        <!-- Logo -->
+        <div class="app-icon">
+            <i class="fa-solid fa-chart-line"></i>
+        </div>
+
+        <h1>نظام أسعار اليمن (PricePulse)</h1>
+        <div class="version">الإصدار 1.0.0 | نظام Android (APK)</div>
+
+        <p>التطبيق الأول والأقوى في اليمن لمراقبة وتتبع أسعار السلع والمواد الغذائية. ابحث عن المنتجات، قارن الأسعار بين
+            المتاجر، واكتشف أرخص الخيارات القريبة منك بكل سهولة!</p>
+
+        <!-- Features Grid -->
+        <div class="features">
+            <div class="feature-item">
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <span>مقارنة سريعة للأسعار</span>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-basket-shopping"></i>
+                <span>تتبع سلة عائلية ذكية</span>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <span>البحث عن المتاجر القريبة</span>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>الإبلاغ عن مخالفات الأسعار</span>
+            </div>
+        </div>
+
+        <!-- Download Button -->
+        <a href="YemenPrice.apk" class="download-btn" download>
+            <i class="fa-brands fa-android"></i>
+            تحميل التطبيق الآن مجاناً (APK)
+        </a>
+
+        <!-- Security Badge -->
+        <div class="info-text">
+            <i class="fa-solid fa-shield-check"></i>
+            يتم التنزيل عبر رابط آمن ومباشر. حجم الملف: 64 MB
+        </div>
+    </div>
+
+</body>
+
+</html>
